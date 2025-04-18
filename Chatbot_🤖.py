@@ -2,7 +2,7 @@ import os
 import streamlit as st
 
 # Load OpenAI API key securely from Streamlit secrets
-os.environ["OPENAI_API_KEY"] = st.secrets["openai"]["api_key"]
+os.environ["OPENAI_API_KEY"] = st.secrets["api_key"]
 
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
